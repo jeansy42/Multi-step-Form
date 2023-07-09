@@ -7,28 +7,31 @@ import Ons from "./pages/Ons";
 import Summary from "./pages/Summary";
 import Success from "./pages/Success";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/plan",
-    element: <Plans />,
-  },
-  {
-    path: "/ons",
-    element: <Ons />,
-  },
-  {
-    path: "/summary",
-    element: <Summary />,
-  },
-  {
-    path: "/success",
-    element: <Success />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/plan",
+      element: <Plans />,
+    },
+    {
+      path: "/ons",
+      element: <Ons />,
+    },
+    {
+      path: "/summary",
+      element: <Summary />,
+    },
+    {
+      path: "/success",
+      element: <Success />,
+    },
+  ],
+  { basename: "/Multi-step-Form" }
+);
 
 function App() {
   const [toggle, setToggle] = useState(false);
